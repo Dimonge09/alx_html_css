@@ -1,27 +1,67 @@
-<link href="styles.css" rel="stylesheet">
 /* Make body a flex container in column direction */
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
   margin: 0;
 }
 
-/* Make main a flex container in row direction */
+/* Main area: flex row layout */
 main {
   display: flex;
   flex-direction: row;
-  flex: auto; /* Flexible size */
+  flex: auto;
 }
 
-/* Article takes 2/3 of the space */
+/* Article section */
 article {
   flex: 2;
-  overflow-y: auto; /* Allow scrolling */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
 }
 
-/* Aside takes 1/3 of the space */
+article h1, article h2, article h3 {
+  color: #2c3e50;
+}
+
+article p {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #eee;
+  color: #333;
+}
+
+td {
+  padding: 8px;
+  text-align: center;
+}
+
+/* Aside section */
 aside {
   flex: 1;
-  overflow-y: auto; /* Allow scrolling */
+  overflow-y: auto;
+}
+
+/* Logo style */
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+  color: #ff9900;
+  margin-right: 20px;
 }
